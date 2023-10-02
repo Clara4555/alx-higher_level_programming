@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+"""Defines a list class MyList."""
+
+
 class MyList(list):
-    """sorting for  built-in list class."""
+    """Implements printing for the built-in list class."""
+
     def print_sorted(self):
-        """prints sorted ascending order."""
+        """Print a list in  ascending order."""
         print(sorted(self))
