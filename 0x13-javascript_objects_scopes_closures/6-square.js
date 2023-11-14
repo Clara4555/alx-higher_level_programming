@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const SquareSub = require('./5-square');
+const SquareP = require('./5-square');
 
-class Square extends SquareSub {
+class Square extends SquareP {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
@@ -9,7 +9,7 @@ class Square extends SquareSub {
     for (let a = 0; a < this.height; a++) {
       let b = '';
       for (let d = 0; d < this.width; d++) {
-        b = b + d;
+        b = b + c;
       }
       console.log(b);
     }
