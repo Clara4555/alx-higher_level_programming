@@ -8,24 +8,25 @@ class Rectangle {
   }
 
   print () {
-    for (let a = 0; a < this.height; a++) {
-      let b = '';
-      for (let c = 0; c < this.width; c++) {
-        b = b + ' X';
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
       }
       console.log(s);
     }
   }
 
   rotate () {
-    const switches  = this.width;
+    const aux = this.width;
     this.width = this.height;
-    this.height = switches;
+    this.height = aux;
   }
 
   double () {
-    this.width = width * 2;
-    this.height = width * 2;
+    this.width *= 2;
+    this.height *= 2;
   }
 }
+
 module.exports = Rectangle;
